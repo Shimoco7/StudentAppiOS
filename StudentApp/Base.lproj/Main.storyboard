@@ -149,28 +149,20 @@
                                     <constraint firstItem="LkK-Kj-DQo" firstAttribute="top" secondItem="q5y-Ze-dQI" secondAttribute="top" constant="11" id="psA-pj-QdH"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-kb-2lu" userLabel="addButton">
-                                <rect key="frame" x="167" y="752" width="81" height="122"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-kb-2lu" userLabel="addButton">
+                                <rect key="frame" x="166.5" y="752" width="81" height="122"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="Q0F-fE-Lwx"/>
-                                    <constraint firstAttribute="height" constant="122" id="guq-Bs-5r6"/>
+                                    <constraint firstAttribute="width" constant="81" id="6gF-s6-8ye"/>
+                                    <constraint firstAttribute="height" constant="122" id="fNZ-0V-EGi"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="+">
-                                            <attributes>
-                                                <font key="NSFont" size="96" name="Arial-BoldMT"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <attributedString key="attributedSubtitle"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+" subtitle="" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="96"/>
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-uQ-PCy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-uQ-PCy">
                                 <rect key="frame" x="20" y="44" width="374" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnm-xH-elS">
                                         <rect key="frame" x="160" y="11" width="54" height="32"/>
@@ -187,11 +179,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="q5y-Ze-dQI" secondAttribute="bottom" constant="22" id="2RN-Fs-47j"/>
+                            <constraint firstItem="Gi8-i3-Ufp" firstAttribute="top" secondItem="lhx-uQ-PCy" secondAttribute="bottom" constant="15" id="70U-bx-89C"/>
+                            <constraint firstItem="qPW-kb-2lu" firstAttribute="centerX" secondItem="lhx-uQ-PCy" secondAttribute="centerX" id="Avf-h5-GgT"/>
+                            <constraint firstItem="qPW-kb-2lu" firstAttribute="centerX" secondItem="q5y-Ze-dQI" secondAttribute="centerX" id="CO1-jW-GvR"/>
                             <constraint firstItem="q5y-Ze-dQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G1D-gR-kWU"/>
                             <constraint firstItem="Gi8-i3-Ufp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UbN-hY-QBh"/>
+                            <constraint firstItem="qPW-kb-2lu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="12" id="Vg3-Xd-faR"/>
+                            <constraint firstItem="lhx-uQ-PCy" firstAttribute="leading" secondItem="Gi8-i3-Ufp" secondAttribute="leading" id="nsT-rB-m6K"/>
                             <constraint firstItem="Gi8-i3-Ufp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="r4B-Nr-aAD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gi8-i3-Ufp" secondAttribute="trailing" constant="20" id="rqg-ZB-7Y9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5y-Ze-dQI" secondAttribute="trailing" constant="20" id="unq-ei-nEa"/>
+                            <constraint firstItem="lhx-uQ-PCy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vj1-k8-2Sh"/>
                         </constraints>
                     </view>
                     <connections>
