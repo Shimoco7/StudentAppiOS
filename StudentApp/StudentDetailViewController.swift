@@ -9,11 +9,18 @@ import UIKit
 
 class StudentDetailViewController: UIViewController {
 
+    @IBOutlet weak var backNavItem: UINavigationItem!
+    @IBOutlet weak var imageProfile: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageProfile.layer.cornerRadius=25
+        imageProfile.clipsToBounds=true
+        
+       
+     
     }
+    
+    
     
 
     /*
