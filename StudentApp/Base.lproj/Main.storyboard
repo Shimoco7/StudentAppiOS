@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-i3-Ufp">
-                                <rect key="frame" x="20" y="44" width="374" height="764"/>
+                                <rect key="frame" x="20" y="88" width="374" height="720"/>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5y-Ze-dQI">
                                 <rect key="frame" x="20" y="807" width="374" height="67"/>
@@ -188,6 +188,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5y-Ze-dQI" secondAttribute="trailing" constant="20" id="unq-ei-nEa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lFp-WT-OQF"/>
                     <connections>
                         <outlet property="containerView" destination="Gi8-i3-Ufp" id="XIo-uW-Wex"/>
                         <segue destination="gk0-um-e6t" kind="custom" identifier="studentListSegue" customClass="MySegue" customModule="StudentApp" customModuleProvider="target" id="M7a-Im-gZO"/>
@@ -552,6 +553,7 @@
                         <outlet property="idInput" destination="d65-72-l0a" id="gsF-CE-3eN"/>
                         <outlet property="nameInput" destination="afE-Af-3Bm" id="MJb-hO-5hR"/>
                         <outlet property="phoneInput" destination="bYu-Gr-10c" id="fcM-sm-MzH"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="viewControllerSegue" id="Yqu-Pc-z1J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oi-Au-BhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
