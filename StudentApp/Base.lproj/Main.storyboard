@@ -84,7 +84,7 @@
                         <barButtonItem key="backBarButtonItem" title="Students" id="LXL-AT-kjZ"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="CXJ-zj-A2S" kind="show" id="mIo-HS-Si2"/>
+                        <segue destination="CXJ-zj-A2S" kind="show" identifier="openStudentDetails" id="8S5-ZW-xeI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMi-2c-myt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
