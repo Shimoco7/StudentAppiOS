@@ -37,7 +37,11 @@ class StudentDetailViewController: UIViewController {
         super.viewDidLoad()
         imageProfile.layer.cornerRadius=25
         imageProfile.clipsToBounds=true
-    
+        idLabel.text = student?.id
+        nameLabel.text = student?.name
+        phoneLabel.text = student?.phone
+        addressLabel.text = student?.address
+        
     }
     
     
