@@ -35,7 +35,7 @@ class StudentDetailViewController: UIViewController {
     @IBOutlet weak var imageProfile: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageProfile.layer.cornerRadius=25
+        imageProfile.layer.cornerRadius=40
         imageProfile.clipsToBounds=true
         idLabel.text = student?.id
         nameLabel.text = student?.name
