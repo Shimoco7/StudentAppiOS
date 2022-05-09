@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddStudentViewController: UIViewController {
+class AddStudentViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var addressInput: UITextField!
     @IBOutlet weak var phoneInput: UITextField!
@@ -25,8 +25,23 @@ class AddStudentViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.nameInput.delegate=self
+        self.idInput.delegate=self
+        self.phoneInput.delegate=self
+        self.addressInput.delegate=self
+        
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField)->Bool{
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 
