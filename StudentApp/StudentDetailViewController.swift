@@ -9,6 +9,10 @@ import UIKit
 
 class StudentDetailViewController: UIViewController {
 
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var backNavItem: UINavigationItem!
     @IBOutlet weak var imageProfile: UIImageView!
     override func viewDidLoad() {
