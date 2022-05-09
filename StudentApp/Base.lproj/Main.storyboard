@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gk0-um-e6t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -415,7 +415,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d65-72-l0a" userLabel="ID">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d65-72-l0a" userLabel="ID input">
                                 <rect key="frame" x="5" y="362" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JdP-mI-vbW"/>
@@ -431,7 +431,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bYu-Gr-10c" userLabel="ID">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bYu-Gr-10c" userLabel="Phone Input">
                                 <rect key="frame" x="5" y="420" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ydr-Y5-cGz"/>
@@ -447,7 +447,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Address" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-S6-wrU" userLabel="ID">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Address" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-S6-wrU" userLabel="Adress Input">
                                 <rect key="frame" x="5" y="478" width="364" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="xrd-zZ-htY"/>
@@ -463,8 +463,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-ij-1ti">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-ij-1ti">
                                 <rect key="frame" x="16" y="598" width="160" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="IKB-2e-ZGZ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
                                     <backgroundConfiguration key="background">
@@ -484,8 +487,11 @@
                                     <action selector="cancelBtn:" destination="S29-48-NuX" eventType="touchUpInside" id="GcE-a0-jpw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-QE-Qkl">
-                                <rect key="frame" x="198" y="620" width="160" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-QE-Qkl">
+                                <rect key="frame" x="198" y="598" width="160" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="8dl-gu-fBa"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
                                     <backgroundConfiguration key="background">
@@ -509,12 +515,15 @@
                         <viewLayoutGuide key="safeArea" id="rqc-gC-EVI"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="trailing" secondItem="kbk-Ma-7Zj" secondAttribute="trailingMargin" id="2Gx-hp-VLb"/>
                             <constraint firstItem="afE-Af-3Bm" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="3do-lV-Xzp"/>
+                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="16" id="8QL-5m-OgC"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="top" secondItem="kbk-Ma-7Zj" secondAttribute="top" constant="88" id="AFr-AJ-fKu"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="16" id="Dji-xF-cRN"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="d65-72-l0a" secondAttribute="trailing" constant="5" id="FNq-r5-aHi"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="DgW-S6-wrU" secondAttribute="trailing" constant="5" id="GTH-6C-Psl"/>
+                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="IW0-LX-FZD"/>
                             <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="L6S-mN-9jl"/>
+                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="16" id="PGF-qx-6rx"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="trailing" secondItem="rqc-gC-EVI" secondAttribute="trailing" id="PKl-1Y-apN"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" id="R2f-QR-OFh"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="top" secondItem="d65-72-l0a" secondAttribute="bottom" constant="8" symbolic="YES" id="ST9-aP-8YY"/>
@@ -522,9 +531,12 @@
                             <constraint firstItem="d65-72-l0a" firstAttribute="top" secondItem="afE-Af-3Bm" secondAttribute="bottom" constant="8" symbolic="YES" id="Tjg-q6-qdf"/>
                             <constraint firstItem="afE-Af-3Bm" firstAttribute="top" secondItem="BwN-HF-V9S" secondAttribute="bottom" constant="20" id="Txj-2h-1PD"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="bYu-Gr-10c" secondAttribute="trailing" constant="5" id="Y6E-Vm-5rT"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="Z5p-iU-kTh"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="top" secondItem="bYu-Gr-10c" secondAttribute="bottom" constant="8" symbolic="YES" id="c87-BB-ofj"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="top" secondItem="d65-72-l0a" secondAttribute="bottom" constant="8" symbolic="YES" id="cSs-Ct-Xm2"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="16" id="cet-Vc-xfW"/>
                             <constraint firstItem="d65-72-l0a" firstAttribute="top" secondItem="afE-Af-3Bm" secondAttribute="bottom" constant="8" symbolic="YES" id="eh5-0b-aAg"/>
+                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="plu-5w-imR"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="sS1-Cl-1Z1"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="ubQ-BR-qvh"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="top" secondItem="bYu-Gr-10c" secondAttribute="bottom" constant="8" symbolic="YES" id="uv3-64-0IL"/>
