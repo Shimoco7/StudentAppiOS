@@ -118,6 +118,9 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-i3-Ufp">
                                 <rect key="frame" x="20" y="66" width="374" height="742"/>
+                                <connections>
+                                    <segue destination="MBd-Dn-dFR" kind="custom" id="1AE-Vq-rdy"/>
+                                </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5y-Ze-dQI">
                                 <rect key="frame" x="20" y="807" width="374" height="67"/>
@@ -184,7 +187,6 @@
                     </view>
                     <connections>
                         <segue destination="gk0-um-e6t" kind="custom" id="M7a-Im-gZO"/>
-                        <segue destination="S29-48-NuX" kind="custom" id="RBU-cT-a65"/>
                         <segue destination="4Rv-iU-hv8" kind="custom" id="zE4-PA-swE"/>
                     </connections>
                 </viewController>
@@ -327,8 +329,12 @@
                     <navigationItem key="navigationItem" id="fwn-dT-QLZ"/>
                     <size key="freeformSize" width="374" height="694"/>
                     <connections>
+                        <outlet property="addressLabel" destination="epF-rV-pr1" id="Hda-Tc-by2"/>
                         <outlet property="backNavItem" destination="fwn-dT-QLZ" id="Oeg-BO-FnI"/>
+                        <outlet property="idLabel" destination="wG4-WL-SKg" id="Pws-Wz-VVQ"/>
                         <outlet property="imageProfile" destination="SDl-Se-Z7y" id="MJX-WK-Fsh"/>
+                        <outlet property="nameLabel" destination="pcK-lQ-BcF" id="hl4-fF-axy"/>
+                        <outlet property="phoneLabel" destination="5C6-Ft-v0q" id="260-y8-Cij"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udr-0U-IvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,7 +380,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="BwN-HF-V9S">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="196"/>
+                                <rect key="frame" x="0.0" y="88" width="374" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="3HC-TF-QeU"/>
                                     <constraint firstAttribute="height" constant="196" id="MA9-Qa-KHd"/>
@@ -382,7 +388,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" placeholder="Name" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="afE-Af-3Bm">
-                                <rect key="frame" x="5" y="216" width="364" height="50"/>
+                                <rect key="frame" x="5" y="304" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qJF-r1-SQE"/>
                                 </constraints>
@@ -398,7 +404,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d65-72-l0a" userLabel="ID">
-                                <rect key="frame" x="5" y="274" width="364" height="50"/>
+                                <rect key="frame" x="5" y="362" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JdP-mI-vbW"/>
                                 </constraints>
@@ -414,7 +420,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bYu-Gr-10c" userLabel="ID">
-                                <rect key="frame" x="5" y="332" width="364" height="50"/>
+                                <rect key="frame" x="5" y="420" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ydr-Y5-cGz"/>
                                 </constraints>
@@ -430,7 +436,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Address" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-S6-wrU" userLabel="ID">
-                                <rect key="frame" x="5" y="390" width="364" height="100"/>
+                                <rect key="frame" x="5" y="478" width="364" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="xrd-zZ-htY"/>
                                 </constraints>
@@ -453,10 +459,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-ij-1ti">
-                                <rect key="frame" x="16" y="532" width="163" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="NVM-gk-UY3"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="620" width="111.5" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
                                     <backgroundConfiguration key="background">
@@ -473,8 +476,8 @@
                                     </attributedString>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-QE-Qkl">
-                                <rect key="frame" x="195" y="532" width="163" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-QE-Qkl">
+                                <rect key="frame" x="143.5" y="620" width="214.5" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
                                     <backgroundConfiguration key="background">
@@ -493,10 +496,11 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rqc-gC-EVI"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ghi-QE-Qkl" firstAttribute="trailing" secondItem="kbk-Ma-7Zj" secondAttribute="trailingMargin" id="2Gx-hp-VLb"/>
                             <constraint firstItem="afE-Af-3Bm" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="3do-lV-Xzp"/>
-                            <constraint firstItem="BwN-HF-V9S" firstAttribute="top" secondItem="kbk-Ma-7Zj" secondAttribute="top" id="AFr-AJ-fKu"/>
+                            <constraint firstItem="BwN-HF-V9S" firstAttribute="top" secondItem="kbk-Ma-7Zj" secondAttribute="top" constant="88" id="AFr-AJ-fKu"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="d65-72-l0a" secondAttribute="trailing" constant="5" id="FNq-r5-aHi"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="DgW-S6-wrU" secondAttribute="trailing" constant="5" id="GTH-6C-Psl"/>
                             <constraint firstItem="Ghi-QE-Qkl" firstAttribute="baseline" secondItem="HcS-ij-1ti" secondAttribute="baseline" id="GdL-9C-6CS"/>
@@ -520,11 +524,28 @@
                             <constraint firstItem="Ghi-QE-Qkl" firstAttribute="leading" secondItem="HcS-ij-1ti" secondAttribute="trailing" constant="16" id="ymy-LP-AtY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Student" id="AsV-UL-tI7"/>
                     <size key="freeformSize" width="374" height="694"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oi-Au-BhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186.9565217391305" y="375.66964285714283"/>
+            <point key="canvasLocation" x="2432" y="288"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cif-ag-3aH">
+            <objects>
+                <navigationController id="MBd-Dn-dFR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yfw-Mo-ZNk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S29-48-NuX" kind="relationship" relationship="rootViewController" id="59h-yB-v39"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbW-GE-0ly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="288"/>
         </scene>
     </scenes>
     <resources>
