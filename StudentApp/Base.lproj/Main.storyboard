@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gk0-um-e6t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -128,6 +128,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="house.fill" catalog="system" cornerStyle="capsule">
                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="listBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtd-LG-IgY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkK-Kj-DQo" userLabel="aboutButton">
                                         <rect key="frame" x="288" y="11" width="45" height="45"/>
@@ -139,6 +142,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="person" catalog="system" cornerStyle="capsule">
                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="aboutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZF-qa-mIm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21698766946792603" green="0.61943262815475464" blue="0.92275524139404297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -162,6 +168,9 @@
                                     <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="96"/>
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Up-OU-CU9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -180,9 +189,9 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="Gi8-i3-Ufp" id="XIo-uW-Wex"/>
-                        <segue destination="gk0-um-e6t" kind="custom" id="M7a-Im-gZO"/>
-                        <segue destination="MBd-Dn-dFR" kind="custom" id="OMd-Ct-iiH"/>
-                        <segue destination="yg0-NT-a4X" kind="custom" id="1QC-LW-0r5"/>
+                        <segue destination="gk0-um-e6t" kind="custom" identifier="studentListSegue" customClass="MySegue" customModule="StudentApp" customModuleProvider="target" id="M7a-Im-gZO"/>
+                        <segue destination="MBd-Dn-dFR" kind="custom" identifier="addStudentSegue" customClass="MySegue" customModule="StudentApp" customModuleProvider="target" id="OMd-Ct-iiH"/>
+                        <segue destination="yg0-NT-a4X" kind="custom" identifier="aboutSegue" customClass="MySegue" customModule="StudentApp" customModuleProvider="target" id="1QC-LW-0r5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

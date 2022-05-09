@@ -10,6 +10,12 @@ import UIKit
 class ViewController: UIViewController , MySegueProtocol {
     
     
+    @IBAction func aboutBtn(_ sender: UIButton) {
+    }
+    @IBAction func addBtn(_ sender: UIButton) {
+    }
+    @IBAction func listBtn(_ sender: UIButton) {
+    }
     func getViewContainer(identifier: String) -> UIView {
         return containerView
     }
