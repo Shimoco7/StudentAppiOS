@@ -14,8 +14,14 @@ class AddStudentViewController: UIViewController {
     @IBOutlet weak var idInput: UITextField!
     @IBOutlet weak var nameInput: UITextField!
     @IBAction func saveBtn(_ sender: UIButton) {
+        let student = Student(id: idInput.text!, name: nameInput.text!, phone: phoneInput.text!, address: addressInput.text!)
+        Model.instance.addStudent(student: student)
     }
     @IBAction func cancelBtn(_ sender: UIButton) {
+        idInput.text = ""
+        phoneInput.text = ""
+        nameInput.text = ""
+        addressInput.text = ""
     }
     override func viewDidLoad() {
         super.viewDidLoad()
