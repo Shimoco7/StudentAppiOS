@@ -9,10 +9,10 @@ import Foundation
 
 class Student{
     
-    let name=""
-    let id=""
-    let phone=""
-    let address=""
+    var name=""
+    var id=""
+    var phone=""
+    var address=""
     
     init(id:String,name:String,phone:String,address:String){
         self.id = id
