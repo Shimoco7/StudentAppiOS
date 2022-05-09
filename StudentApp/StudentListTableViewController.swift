@@ -35,26 +35,26 @@ class StudentListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath) as? StudentTableViewCell
-        selectRow = indexPath.row
-        cell?.id = Model.instance.students[selectRow].id
-        cell?.name = Model.instance.students[selectRow].name
+        cell?.id = Model.instance.students[indexPath.row].id
+        cell?.name = Model.instance.students[indexPath.row].name
 
         return cell!
     }
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        selectRow = indexPath.row
+        performSegue(withIdentifier: "openStudentDetails", sender: self)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "openStudentDetails"){
+            let dvc = segue.destination as? StudentDetailViewController
+            let st = Model.instance.students[selectRow]
+            dvc?.student = st
+        }
     }
-    */
+
 
 }

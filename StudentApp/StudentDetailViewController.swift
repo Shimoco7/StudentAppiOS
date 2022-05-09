@@ -8,6 +8,24 @@
 import UIKit
 
 class StudentDetailViewController: UIViewController {
+    
+    var student:Student?{
+        didSet{
+            if(idLabel != nil){
+                idLabel.text = student?.id
+            }
+            if(nameLabel != nil){
+                nameLabel.text = student?.name
+            }
+            if(phoneLabel != nil){
+                phoneLabel.text = student?.phone
+            }
+            if(addressLabel != nil){
+                addressLabel.text = student?.address
+            }
+        }
+    }
+    
 
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
@@ -19,9 +37,7 @@ class StudentDetailViewController: UIViewController {
         super.viewDidLoad()
         imageProfile.layer.cornerRadius=25
         imageProfile.clipsToBounds=true
-        
-       
-     
+    
     }
     
     
