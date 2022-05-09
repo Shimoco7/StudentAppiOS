@@ -7,8 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController , MySegueProtocol {
+    
+    
+    func getViewContainer(identifier: String) -> UIView {
+        return containerView
+    }
+    
     @IBOutlet weak var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
