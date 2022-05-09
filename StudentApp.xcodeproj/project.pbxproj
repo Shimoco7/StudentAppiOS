@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		207890EF282954F400DA1EED /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207890EE282954F400DA1EED /* StudentDetailViewController.swift */; };
 		207890F128296FD200DA1EED /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207890F028296FD200DA1EED /* AboutViewController.swift */; };
+		207890F32829761F00DA1EED /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207890F22829761F00DA1EED /* AddStudentViewController.swift */; };
 		530AAF16282937C7004F64B8 /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF15282937C7004F64B8 /* StudentListTableViewController.swift */; };
 		530AAF1828293F19004F64B8 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF1728293F19004F64B8 /* StudentTableViewCell.swift */; };
 		530AAF1A282943FE004F64B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF19282943FE004F64B8 /* Model.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		207890EE282954F400DA1EED /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 		207890F028296FD200DA1EED /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		207890F22829761F00DA1EED /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 		530AAF15282937C7004F64B8 /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
 		530AAF1728293F19004F64B8 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		530AAF19282943FE004F64B8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				207890EE282954F400DA1EED /* StudentDetailViewController.swift */,
 				207890F028296FD200DA1EED /* AboutViewController.swift */,
 				530AAF1D28296BC9004F64B8 /* MainSegueProtocol.swift */,
+				207890F22829761F00DA1EED /* AddStudentViewController.swift */,
 			);
 			path = StudentApp;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				530AAF1E28296BC9004F64B8 /* MainSegueProtocol.swift in Sources */,
 				530AAF1C2829445B004F64B8 /* Student.swift in Sources */,
 				C2F2CA022826941300C8A522 /* SceneDelegate.swift in Sources */,
+				207890F32829761F00DA1EED /* AddStudentViewController.swift in Sources */,
 				207890EF282954F400DA1EED /* StudentDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
