@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "kisspng-computer-icons-portable-network-graphics-avatar-ic-5ba3c66df14d32.3051789815374598219884.jpg",
+      "filename" : "avatar1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "avatar2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "avatar3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
