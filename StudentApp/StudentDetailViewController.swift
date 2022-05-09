@@ -11,7 +11,18 @@ class StudentDetailViewController: UIViewController {
     
     var student:Student?{
         didSet{
-            
+            if(idLabel != nil){
+                idLabel.text = student?.id
+            }
+            if(nameLabel != nil){
+                nameLabel.text = student?.name
+            }
+            if(phoneLabel != nil){
+                phoneLabel.text = student?.phone
+            }
+            if(addressLabel != nil){
+                addressLabel.text = student?.address
+            }
         }
     }
     
@@ -26,9 +37,7 @@ class StudentDetailViewController: UIViewController {
         super.viewDidLoad()
         imageProfile.layer.cornerRadius=25
         imageProfile.clipsToBounds=true
-        
-       
-     
+    
     }
     
     
