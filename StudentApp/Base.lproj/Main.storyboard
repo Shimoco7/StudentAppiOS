@@ -108,7 +108,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StudentApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="StudentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,9 +465,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-ij-1ti">
-                                <rect key="frame" x="16" y="598" width="160" height="38"/>
+                                <rect key="frame" x="30" y="598" width="111.5" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="IKB-2e-ZGZ"/>
+                                    <constraint firstAttribute="width" constant="111.5" id="3iI-3U-4rR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
@@ -489,9 +489,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-QE-Qkl">
-                                <rect key="frame" x="198" y="598" width="160" height="38"/>
+                                <rect key="frame" x="232.5" y="598" width="111.5" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="8dl-gu-fBa"/>
+                                    <constraint firstAttribute="width" constant="111.5" id="XyO-qX-YXr"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
@@ -517,27 +517,27 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="afE-Af-3Bm" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="3do-lV-Xzp"/>
-                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="16" id="8QL-5m-OgC"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="top" secondItem="kbk-Ma-7Zj" secondAttribute="top" constant="88" id="AFr-AJ-fKu"/>
-                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="16" id="Dji-xF-cRN"/>
+                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="Bx6-qe-WFh"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="d65-72-l0a" secondAttribute="trailing" constant="5" id="FNq-r5-aHi"/>
+                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="30" id="G5D-kp-WG7"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="GFO-Y9-BG4"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="DgW-S6-wrU" secondAttribute="trailing" constant="5" id="GTH-6C-Psl"/>
-                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="IW0-LX-FZD"/>
-                            <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="L6S-mN-9jl"/>
-                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="16" id="PGF-qx-6rx"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="30" id="JR1-n9-yut"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="Mvc-Y4-LfI"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="trailing" secondItem="rqc-gC-EVI" secondAttribute="trailing" id="PKl-1Y-apN"/>
                             <constraint firstItem="BwN-HF-V9S" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" id="R2f-QR-OFh"/>
+                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="RGc-5v-vEk"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="top" secondItem="d65-72-l0a" secondAttribute="bottom" constant="8" symbolic="YES" id="ST9-aP-8YY"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="BwN-HF-V9S" secondAttribute="trailing" id="SWQ-Nd-ag9"/>
                             <constraint firstItem="d65-72-l0a" firstAttribute="top" secondItem="afE-Af-3Bm" secondAttribute="bottom" constant="8" symbolic="YES" id="Tjg-q6-qdf"/>
                             <constraint firstItem="afE-Af-3Bm" firstAttribute="top" secondItem="BwN-HF-V9S" secondAttribute="bottom" constant="20" id="Txj-2h-1PD"/>
                             <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="bYu-Gr-10c" secondAttribute="trailing" constant="5" id="Y6E-Vm-5rT"/>
-                            <constraint firstItem="HcS-ij-1ti" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="Z5p-iU-kTh"/>
+                            <constraint firstItem="rqc-gC-EVI" firstAttribute="trailing" secondItem="Ghi-QE-Qkl" secondAttribute="trailing" constant="30" id="Znd-d2-F3w"/>
+                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="30" id="bfl-2e-ijm"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="top" secondItem="bYu-Gr-10c" secondAttribute="bottom" constant="8" symbolic="YES" id="c87-BB-ofj"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="top" secondItem="d65-72-l0a" secondAttribute="bottom" constant="8" symbolic="YES" id="cSs-Ct-Xm2"/>
-                            <constraint firstItem="HcS-ij-1ti" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="16" id="cet-Vc-xfW"/>
                             <constraint firstItem="d65-72-l0a" firstAttribute="top" secondItem="afE-Af-3Bm" secondAttribute="bottom" constant="8" symbolic="YES" id="eh5-0b-aAg"/>
-                            <constraint firstItem="Ghi-QE-Qkl" firstAttribute="top" secondItem="DgW-S6-wrU" secondAttribute="bottom" constant="20" id="plu-5w-imR"/>
                             <constraint firstItem="bYu-Gr-10c" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="sS1-Cl-1Z1"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="leading" secondItem="rqc-gC-EVI" secondAttribute="leading" constant="5" id="ubQ-BR-qvh"/>
                             <constraint firstItem="DgW-S6-wrU" firstAttribute="top" secondItem="bYu-Gr-10c" secondAttribute="bottom" constant="8" symbolic="YES" id="uv3-64-0IL"/>
@@ -552,7 +552,6 @@
                         <outlet property="idInput" destination="d65-72-l0a" id="gsF-CE-3eN"/>
                         <outlet property="nameInput" destination="afE-Af-3Bm" id="MJb-hO-5hR"/>
                         <outlet property="phoneInput" destination="bYu-Gr-10c" id="fcM-sm-MzH"/>
-                        <segue destination="gk0-um-e6t" kind="show" identifier="toListSegue" id="dVO-1h-Dwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oi-Au-BhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -592,9 +591,6 @@
             <point key="canvasLocation" x="1157" y="288"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="dVO-1h-Dwz"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="avatar" width="260" height="260"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
