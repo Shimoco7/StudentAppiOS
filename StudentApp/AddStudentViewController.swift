@@ -16,7 +16,9 @@ class AddStudentViewController: UIViewController {
     @IBAction func saveBtn(_ sender: UIButton) {
         let student = Student(id: idInput.text!, name: nameInput.text!, phone: phoneInput.text!, address: addressInput.text!)
         Model.instance.addStudent(student: student)
-        performSegue(withIdentifier: "viewControllerSegue", sender: self)
+        let viewController = self.navigationController?.parent as! ViewController
+        viewController.removeSubViews()
+        viewController.performSegue(withIdentifier: "studentListSegue", sender: self)
     }
     @IBAction func cancelBtn(_ sender: UIButton) {
         idInput.text = ""

@@ -454,7 +454,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="xrd-zZ-htY"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="location"/>
                                 <userDefinedRuntimeAttributes>
