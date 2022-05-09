@@ -29,18 +29,10 @@ class StudentTableViewCell: UITableViewCell {
         }
     }
     
-    var avatarUrl = ""{
-        didSet{
-            if(avatar != nil){
-                avatar.image = UIImage(named: avatarUrl)
-            }
-        }
-    }
     override func awakeFromNib() {
         super.awakeFromNib()
         idLabel.text = id
         nameLabel.text = name
-        avatar.image = UIImage(named: avatarUrl)
         // Initialization code
     }
 
