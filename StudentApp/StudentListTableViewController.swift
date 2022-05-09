@@ -52,6 +52,7 @@ class StudentListTableViewController: UITableViewController {
         if(segue.identifier == "openStudentDetails"){
             let dvc = segue.destination as? StudentDetailViewController
             let st = Model.instance.students[selectRow]
+            dvc?.student = st
         }
     }
 
