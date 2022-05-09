@@ -91,6 +91,7 @@
         <scene sceneID="35w-zp-dOV">
             <objects>
                 <navigationController id="gk0-um-e6t" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Adk-fg-1Or"/>
                     <size key="freeformSize" width="374" height="694"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="55q-Lb-uoH">
                         <rect key="frame" x="0.0" y="44" width="374" height="44"/>
@@ -551,6 +552,7 @@
                         <outlet property="idInput" destination="d65-72-l0a" id="gsF-CE-3eN"/>
                         <outlet property="nameInput" destination="afE-Af-3Bm" id="MJb-hO-5hR"/>
                         <outlet property="phoneInput" destination="bYu-Gr-10c" id="fcM-sm-MzH"/>
+                        <segue destination="gk0-um-e6t" kind="show" identifier="toListSegue" id="dVO-1h-Dwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oi-Au-BhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -590,6 +592,9 @@
             <point key="canvasLocation" x="1157" y="288"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dVO-1h-Dwz"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="avatar" width="260" height="260"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
