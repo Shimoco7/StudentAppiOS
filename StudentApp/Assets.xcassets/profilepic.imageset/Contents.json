@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "avatar1x.png",
+      "filename" : "profiepic.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "avatar2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "avatar3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
