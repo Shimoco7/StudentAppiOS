@@ -113,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-i3-Ufp">
-                                <rect key="frame" x="20" y="66" width="374" height="742"/>
+                                <rect key="frame" x="20" y="44" width="374" height="764"/>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5y-Ze-dQI">
                                 <rect key="frame" x="20" y="807" width="374" height="67"/>
@@ -183,7 +183,7 @@
                             <constraint firstItem="q5y-Ze-dQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G1D-gR-kWU"/>
                             <constraint firstItem="Gi8-i3-Ufp" firstAttribute="leading" secondItem="q5y-Ze-dQI" secondAttribute="leading" id="Ihx-oR-RmN"/>
                             <constraint firstItem="qPW-kb-2lu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="12" id="Vg3-Xd-faR"/>
-                            <constraint firstItem="Gi8-i3-Ufp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="p2P-U3-sbX"/>
+                            <constraint firstItem="Gi8-i3-Ufp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p2P-U3-sbX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5y-Ze-dQI" secondAttribute="trailing" constant="20" id="unq-ei-nEa"/>
                         </constraints>
                     </view>
