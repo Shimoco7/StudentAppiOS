@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207890EF282954F400DA1EED /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207890EE282954F400DA1EED /* StudentDetailViewController.swift */; };
 		530AAF16282937C7004F64B8 /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF15282937C7004F64B8 /* StudentListTableViewController.swift */; };
 		530AAF1828293F19004F64B8 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF1728293F19004F64B8 /* StudentTableViewCell.swift */; };
 		530AAF1A282943FE004F64B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF19282943FE004F64B8 /* Model.swift */; };
 		530AAF1C2829445B004F64B8 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF1B2829445B004F64B8 /* Student.swift */; };
-		207890EF282954F400DA1EED /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207890EE282954F400DA1EED /* StudentDetailViewController.swift */; };
+		530AAF1E28296BC9004F64B8 /* MainSegueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AAF1D28296BC9004F64B8 /* MainSegueProtocol.swift */; };
 		C2F2CA002826941300C8A522 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2C9FF2826941300C8A522 /* AppDelegate.swift */; };
 		C2F2CA022826941300C8A522 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2CA012826941300C8A522 /* SceneDelegate.swift */; };
 		C2F2CA042826941300C8A522 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2CA032826941300C8A522 /* ViewController.swift */; };
@@ -21,11 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207890EE282954F400DA1EED /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 		530AAF15282937C7004F64B8 /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
 		530AAF1728293F19004F64B8 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		530AAF19282943FE004F64B8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		530AAF1B2829445B004F64B8 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		207890EE282954F400DA1EED /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
+		530AAF1D28296BC9004F64B8 /* MainSegueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSegueProtocol.swift; sourceTree = "<group>"; };
 		C2F2C9FC2826941300C8A522 /* StudentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F2C9FF2826941300C8A522 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2F2CA012826941300C8A522 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				530AAF19282943FE004F64B8 /* Model.swift */,
 				530AAF1B2829445B004F64B8 /* Student.swift */,
 				207890EE282954F400DA1EED /* StudentDetailViewController.swift */,
+				530AAF1D28296BC9004F64B8 /* MainSegueProtocol.swift */,
 			);
 			path = StudentApp;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				530AAF16282937C7004F64B8 /* StudentListTableViewController.swift in Sources */,
 				530AAF1A282943FE004F64B8 /* Model.swift in Sources */,
 				C2F2CA002826941300C8A522 /* AppDelegate.swift in Sources */,
+				530AAF1E28296BC9004F64B8 /* MainSegueProtocol.swift in Sources */,
 				530AAF1C2829445B004F64B8 /* Student.swift in Sources */,
 				C2F2CA022826941300C8A522 /* SceneDelegate.swift in Sources */,
 				207890EF282954F400DA1EED /* StudentDetailViewController.swift in Sources */,
