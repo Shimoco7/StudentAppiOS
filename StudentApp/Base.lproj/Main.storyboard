@@ -184,7 +184,7 @@
         <!--Student Detail-->
         <scene sceneID="0qV-sT-nRY">
             <objects>
-                <viewController title="Student Detail" id="CXJ-zj-A2S" sceneMemberID="viewController">
+                <viewController title="Student Detail" id="CXJ-zj-A2S" customClass="StudentDetailViewController" customModule="StudentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Km3-X7-FlL">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="694"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,6 +315,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="fwn-dT-QLZ"/>
                     <size key="freeformSize" width="374" height="694"/>
+                    <connections>
+                        <outlet property="backNavItem" destination="fwn-dT-QLZ" id="Oeg-BO-FnI"/>
+                        <outlet property="imageProfile" destination="SDl-Se-Z7y" id="MJX-WK-Fsh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udr-0U-IvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
