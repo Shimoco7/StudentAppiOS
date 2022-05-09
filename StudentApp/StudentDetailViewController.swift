@@ -8,7 +8,13 @@
 import UIKit
 
 class StudentDetailViewController: UIViewController {
-
+    
+    var student:Student?{
+        didSet{
+            
+        }
+    }
+    
     @IBOutlet weak var backNavItem: UINavigationItem!
     @IBOutlet weak var imageProfile: UIImageView!
     override func viewDidLoad() {
