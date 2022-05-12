@@ -9,6 +9,7 @@ import UIKit
 
 class AddStudentViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var addressInput: UITextField!
     @IBOutlet weak var phoneInput: UITextField!
     @IBOutlet weak var idInput: UITextField!
@@ -27,6 +28,8 @@ class AddStudentViewController: UIViewController, UITextFieldDelegate {
         addressInput.text = ""
     }
     override func viewDidLoad() {
+        imageProfile.layer.cornerRadius=100
+        imageProfile.clipsToBounds=true
         super.viewDidLoad()
         self.nameInput.delegate=self
         self.idInput.delegate=self
